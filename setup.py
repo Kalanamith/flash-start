@@ -6,6 +6,7 @@ version = "0.0.1"
 
 install_requires = (
     "flask",
+    "flask-wtf",
 )
 
 test_requires = (
