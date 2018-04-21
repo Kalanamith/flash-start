@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>Gayan {{title}}</title>
+      {% else %}
+      <title>Welcome to Flash Flask</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Flask: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
