@@ -7,9 +7,11 @@ version = "0.0.1"
 install_requires = (
     "flask",
     "flask-wtf",
+    "flask-sqlalchemy",
+    "flask-migrate",
 )
 
-test_requires = (
+test_require = (
     "pytest",
 )
 
@@ -37,7 +39,7 @@ setuptools.setup(
             "sphinx_rtd_theme",
         ],
 
-        "test": test_requires,
+        "test": test_require,
     },
 
     entry_points={
@@ -46,5 +48,5 @@ setuptools.setup(
 
     setup_requires=["pytest-runner"],
     test_suite="tests",
-    test_requires=test_requires,
+    test_require=test_require,
 )
